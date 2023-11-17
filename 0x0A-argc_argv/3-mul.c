@@ -10,16 +10,17 @@
 
 int main(int argc, char *argv[])
 {
-	long int i = atoi(argv[1]) * atoi(argv[2]);
 	(void)argc;
 
 	if (argc < 3)
 	{
-		printf("Error");
+		printf("Error\n");
 		return (1);
 	}
 	else
 	{
+		long int i = atoi(argv[1]) * atoi(argv[2]);
+
 		printf("%li\n", i);
 		return (0);
 	}
