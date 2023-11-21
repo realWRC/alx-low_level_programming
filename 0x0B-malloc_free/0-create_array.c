@@ -1,0 +1,25 @@
+/**
+ * create_array - function that creates array of chars
+ * @size: size of array
+ * @c: Char to initialize array
+ *
+ * Return: Pointer to array
+ */
+
+char *create_array(unsigned int size, char c)
+{
+	char *p;
+	int i;
+
+	p = malloc(size);
+
+	if (p == NULL)
+	{
+		return (NULL);
+	}
+	for (i = 0; i < size; i++)
+	{
+		p[i] = c;
+	}
+	return (p);
+}
