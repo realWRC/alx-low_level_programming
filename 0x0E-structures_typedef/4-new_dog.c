@@ -17,9 +17,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 	p = malloc(sizeof(dog_t));
 	if (p == NULL)
 		return (NULL);
-	if (d->name == NULL)
+	if (p->name == NULL)
                 d->name = "(nil)";
-        if (d->owner == NULL)
+        if (p->owner == NULL)
                 d->owner = "(nill)";
 	p->name = name;
 	p->age = age;
