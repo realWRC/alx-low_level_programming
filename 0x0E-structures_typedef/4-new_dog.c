@@ -4,7 +4,6 @@
 
 /**
  * new_dog - function that creates a new dog and returns pointer
- * to it
  * @name: dogs name
  * @age: dogs age
  * @owner: dogs owner
