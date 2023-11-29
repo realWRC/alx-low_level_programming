@@ -8,8 +8,7 @@
  */
 int op_add(int a, int b)
 {
-	printf("%i\n", a + b);
-	return (0);
+	return (a + b);
 }
 /**
  * op_sub - Adds two numbers
@@ -19,8 +18,7 @@ int op_add(int a, int b)
  */
 int op_sub(int a, int b)
 {
-	printf("%i\n", a - b);
-	return (0);
+	return (a - b);
 }
 /**
  * op_mul - Adds two numbers
@@ -30,8 +28,7 @@ int op_sub(int a, int b)
  */
 int op_mul(int a, int b)
 {
-	printf("%i\n", a * b);
-	return (0);
+	return (a * b);
 }
 /**
  * op_div - Adds two numbers
@@ -46,11 +43,7 @@ int op_div(int a, int b)
 		printf("Error\n");
 		exit(100);
 	}
-	else
-	{
-		printf("%i\n", a / b);
-	}
-	return (0);
+	return (a / b);
 }
 /**
  * op_mod - Adds two numbers
@@ -65,9 +58,5 @@ int op_mod(int a, int b)
 		printf("Error\n");
 		exit(100);
 	}
-	else
-	{
-		printf("%i\n", a % b);
-	}
-	return (0);
+	return(a % b);
 }

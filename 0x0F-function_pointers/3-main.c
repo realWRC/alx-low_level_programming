@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 #include "3-calc.h"
 /**
  * main - Entry point of program
@@ -9,20 +10,24 @@
  */
 int main(int argc, char *argv[])
 {
+	int (*operation)(int, int);
 
 	if (argc > 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
-	if (argc == 4)
-	{
-		(get_op_func(argv[2]))(atoi(argv[1]), atoi(argv[3]));
-	}
-	if (argc < 4)
+	if (!(isdigit(*argv[1]))  || !(isdigit(*argv[3])))
 	{
 		printf("Error\n");
 		exit(101);
 	}
+	operation = (get_op_func(argv[2]));
+	if (!operation)
+	{
+		printf("Error\n");
+		exit(99);
+	}
+	printf("%d\n", operation(atoi(argv[1]), atoi(argv[3])));
 	return (0);
 }
