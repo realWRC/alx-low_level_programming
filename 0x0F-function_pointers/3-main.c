@@ -22,10 +22,5 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(99);
 	}
-	/*if (argc < 4)
-	{
-		printf("Error\n");
-		exit(101);
-	}*/
 	return (operation(atoi(argv[1]), atoi(argv[3])));
 }
