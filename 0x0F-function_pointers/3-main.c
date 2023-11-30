@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <string.h>
 #include "3-calc.h"
 /**
  * main - Entry point of program
@@ -23,7 +24,7 @@ int main(int argc, char *argv[])
 		exit(101);
 	}
 	operation = (get_op_func(argv[2]));
-	if (!operation)
+	if (!operation || strlen(argv[2]) != 1)
 	{
 		printf("Error\n");
 		exit(99);
