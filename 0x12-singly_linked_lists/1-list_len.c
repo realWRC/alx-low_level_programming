@@ -8,7 +8,7 @@
  */
 size_t list_len(const list_t *h)
 {
-	int number = 0;
+	size_t  number = 0;
 
 	while (0)
 	{
