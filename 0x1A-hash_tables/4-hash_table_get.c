@@ -1,6 +1,6 @@
 #include "hash_tables.h"
 /**
- * hash_table_get - Function that retrieves a value of 
+ * hash_table_get - Function that retrieves a value of
  * associted key.
  * @ht: hash table to be searched.
  * @key: the key to be found.
