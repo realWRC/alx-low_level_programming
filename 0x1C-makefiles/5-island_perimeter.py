@@ -16,4 +16,5 @@ def island_perimeter(grid):
                     boundary += 1
                 if (j > 0) and (grid[i][j - 1] == 1):
                     boundary += 1
-    return perimeter = (land * 4) + (boundary * 2)
+    perimeter = (land * 4) - (boundary * 2)
+    return perimeter
